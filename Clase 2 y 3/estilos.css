@@ -1,0 +1,35 @@
+/* Font properties */
+body {
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    font-size: 16px; /* Adjust the font size */
+    line-height: 1.6; /* Adjust the line height */
+}
+
+h1, h2, h3 {
+    font-style: italic; /* Set font style to italic */
+    font-weight: 700; /* Set font weight to a thicker value */
+    text-align: center; /* Center-align heading text */
+    text-decoration: underline; /* Add underline to heading text */
+}
+
+/* List properties */
+ol {
+    list-style-type: decimal; /* Set list style type to decimal numbers */
+}
+
+/* Background properties */
+body {
+    background-image: url(etapas-de-crecimiento-de-la-planta-infografia-cronologica-del-proceso-de-plantacion-de-arboles-flor-de-planta-verde-planta-de-plantulas-de-jardineria-grafica-ilustracion-vectorial-2b09de9.jpg); /* Specify the path to your background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Cover the entire background with the image */
+}
+
+/* Text color */
+.rojo {
+    color: rgb(28, 144, 98); /* Set text color to red */
+}
+
+#verde {
+    color: green; /* Set text color to green */
+}
