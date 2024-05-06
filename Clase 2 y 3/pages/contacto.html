@@ -3,53 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Web Page</title>
     <style>
         body {
-            background-image: url(74552226-colgar-macetas-en-un-invernadero-de-plantas-de-vivero-plantación-de-flores-de-fondo.jpg); 
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(74552226-colgar-macetas-en-un-invernadero-de-plantas-de-vivero-plantación-de-flores-de-fondo.jpg); 
             background-repeat: no-repeat; 
             background-size: cover; 
             color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li:first-child {
+            font-size: 0.8em; /* Slightly smaller font size for the first child */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Página Web</h1>
+        <h1>My Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
-        </ul>
-    </nav>
-    <section id="inicio">
-        <h2>Bienvenido</h2>
-        <p>Bienvenido a mi página web. Aquí encontrarás información sobre nuestros productos y servicios.</p>
-    </section>
-    <section id="sobre">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una empresa dedicada a brindar soluciones en línea. Nuestro equipo está comprometido en ofrecer servicios de alta calidad a nuestros clientes.</p>
-    </section>
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Diseño Web</li>
-            <li>Desarrollo de Aplicaciones</li>
-            <li>Marketing Digital</li>
-        </ul>
-    </section>
-    <section id="contacto">
-        <h2>Información de Contacto</h2>
-        <p>Si tienes alguna pregunta o consulta, no dudes en contactarnos utilizando la siguiente información:</p>
-        <address>
-            Email: <a href="mailto:contacto@miempresa.com">contacto@miempresa.com</a><br>
-            Teléfono: 1-800-123-4567<br>
-            Dirección: Calle Principal 123, Ciudad, País
-        </address>
-    </section>
+    <main>
+        <section id="inicio">
+            <h2>Welcome</h2>
+            <p>Welcome to my website. Here you will find information about our products and services.</p>
+        </section>
+        <section id="sobre">
+            <h2>About Us</h2>
+            <p>We are a company dedicated to providing online solutions. Our team is committed to offering high-quality services to our clients.</p>
+        </section>
+        <section id="servicios">
+            <h2>Services</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Application Development</li>
+                <li>Digital Marketing</li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or inquiries, feel free to contact us using the following information:</p>
+            <address>
+                Email: <a href="mailto:contact@mycompany.com">contact@mycompany.com</a><br>
+                Phone: 1-800-123-4567<br>
+                Address: 123 Main Street, City, Country
+            </address>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Mi Página Web</p>
+        <p>&copy; 2024 My Web Page</p>
     </footer>
 </body>
 </html>

@@ -1,36 +1,75 @@
-/* Font properties */
 body {
-    font-family: Arial, sans-serif; /* Specify a fallback font family */
-    font-size: 16px; /* Set font size to 16 */
-    line-height: 1.6; /* Adjust the line height */
-    color: white; /* Set text color to white */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(amanecer-invernadero-vivero-quebrada-de-lules.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
-h1, h2, h3 {
-    font-style: italic; /* Set font style to italic */
-    font-weight: bold; /* Set font weight to bold */
-    text-align: center; /* Center-align heading text */
-    text-decoration: underline; /* Add underline to heading text */
+header, footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+    padding: 20px;
 }
 
-/* List properties */
-ol {
-    list-style-type: decimal; /* Set list style type to decimal numbers */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Background properties */
-body {
-    background-image: url(amanecer-invernadero-vivero-quebrada-de-lules.jpg); /* Specify the path to your background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-position: center; /* Center the background image */
-    background-size: cover; /* Cover the entire background with the image */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-/* Text color */
-.rojo {
-    color: rgb(224, 252, 99); /* Set text color to red */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
 }
 
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific section styles */
+.importance {
+    border: 2px solid #ff0000;
+}
+
+.how-to-plant {
+    border: 2px solid #00ff00;
+}
+
+/* Custom style for the importance section text */
+.importance p {
+    color: red;
+    font-weight: bold;
+}
+
+/* Custom style for the footer text */
 #verde {
-    color: rgb(116, 225, 244); /* Set text color to green */
+    color: green;
+    font-weight: bold;
 }

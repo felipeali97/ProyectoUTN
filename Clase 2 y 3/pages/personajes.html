@@ -4,25 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personajes</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             background-image: url(maxresdefault.jpg); 
             background-repeat: no-repeat; 
             background-size: cover; 
             color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li:first-child {
+            font-size: 0.8em; /* Slightly smaller font size for the first child */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            margin: 20px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Personajes</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
-        </ul>
-    </nav>
     <section>
         <h2>Personajes Ficticios en el Vivero</h2>
         <p>Bienvenido a nuestro vivero! Aquí encontrarás una variedad de personajes ficticios que dan vida y alegría a nuestros espacios verdes.</p>
@@ -38,3 +80,4 @@
     </footer>
 </body>
 </html>
+
